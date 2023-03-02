@@ -114,14 +114,16 @@ function search() {
 }
 function deletee() {
 
-    let delpos = prompt("what value you want delete") //giving the value
+       let delpos = prompt("what value you want delete") //giving the value
     delpos = arr.indexOf(delpos)
+    console.log("index value",delpos)
     for (var i = 0; i < arr.length; ++i){
+        
     if (delpos == arr[i]) {
 
         //postion of value| deleting one item|
         //                ^|   ^  
-        arr.splice(delpos, 1)
+        arr.splice(delpos, 1,)
 
         checkChildren()//clear the previous array
 
@@ -133,6 +135,7 @@ function deletee() {
         alert("enter the correct number")
         break
     }}
+
 
 
 
